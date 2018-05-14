@@ -1,0 +1,4 @@
+# OSGI ENROUTE EXAMPLES LOGGING APPLICATION
+
+${Bundle-Description}
+

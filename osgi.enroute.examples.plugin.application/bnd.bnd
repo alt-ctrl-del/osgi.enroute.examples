@@ -1,0 +1,27 @@
+#
+# OSGI ENROUTE EXAMPLES PLUGIN APPLICATION APPLICATION
+#
+
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Description: \
+	Plugin application
+
+Private-Package: \
+	osgi.enroute.examples.plugin.application,\
+	osgi.enroute.examples.plugin.test.provider
+
+EnRoute-Application: 	osgi.enroute.examples.plugin
+JPM-Command:			plugin
+
+-includeresource: \
+	{readme.md}, \
+	{configuration=configuration}, \
+	{static=static}, \
+	web=web
+
+-buildpath: \
+	osgi.enroute.base.api
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
+Export-Package: osgi.enroute.examples.plugin.api
